@@ -16,27 +16,31 @@ import { TooltipComponent } from './tooltip/tooltip.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
 import { SliderComponent } from './slider/slider.component';
 import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
-
+import { IshopAPIComponent } from './ishop-api/ishop-api.component';
+import { DCTManagementComponent } from './dct-management/dct-management.component';
+import { LoyaltyCardComponent } from './loyalty-card/loyalty-card.component';
+import { PaymentManagementComponent } from './payment-management/payment-management.component';
+import { DiscordNotificationComponent } from './discord-notification/discord-notification.component';
 export const MaterialRoutes: Routes = [
   {
-    path: 'button',
-    component: ButtonsComponent
+    path: 'IshopAPI',
+    component: IshopAPIComponent
   },
   {
-    path: 'grid',
-    component: GridComponent
+    path: 'DCTManagment',
+    component: DCTManagementComponent
   },
   {
-    path: 'lists',
-    component: ListsComponent
+    path: 'LoyaltyCard',
+    component: LoyaltyCardComponent
   },
   {
-    path: 'menu',
-    component: MenuComponent
+    path: 'PaymentManagement',
+    component: PaymentManagementComponent
   },
   {
-    path: 'tabs',
-    component: TabsComponent
+    path: 'DiscordNotification',
+    component: DiscordNotificationComponent
   },
   {
     path: 'stepper',

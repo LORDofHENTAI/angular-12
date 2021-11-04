@@ -31,6 +31,11 @@ import { TooltipComponent } from './tooltip/tooltip.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
 import { SliderComponent } from './slider/slider.component';
 import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
+import { IshopAPIComponent } from './ishop-api/ishop-api.component';
+import { DCTManagementComponent } from './dct-management/dct-management.component';
+import { LoyaltyCardComponent } from './loyalty-card/loyalty-card.component';
+import { PaymentManagementComponent } from './payment-management/payment-management.component';
+import { DiscordNotificationComponent } from './discord-notification/discord-notification.component';
 
 @NgModule({
   imports: [
@@ -62,7 +67,12 @@ import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
     TooltipComponent,
     SnackbarComponent,
     SliderComponent,
-    SlideToggleComponent
+    SlideToggleComponent,
+    IshopAPIComponent,
+    DCTManagementComponent,
+    LoyaltyCardComponent,
+    PaymentManagementComponent,
+    DiscordNotificationComponent
   ]
 })
 export class MaterialComponentsModule {}
