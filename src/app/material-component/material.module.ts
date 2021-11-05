@@ -3,9 +3,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
-
+import { MatTableModule } from '@angular/material/table';
 import { DemoMaterialModule } from '../demo-material-module';
-import { CdkTableModule } from '@angular/cdk/table';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -28,7 +27,7 @@ import { DiscordNotificationComponent } from './discord-notification/discord-not
     FormsModule,
     ReactiveFormsModule,
     FlexLayoutModule,
-    CdkTableModule
+    MatTableModule
   ],
   providers: [],
   entryComponents: [],

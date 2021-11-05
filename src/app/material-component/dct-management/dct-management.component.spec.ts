@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { DCTManagementComponent } from './dct-management.component';
 
 describe('DCTManagementComponent', () => {
@@ -8,9 +7,9 @@ describe('DCTManagementComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DCTManagementComponent ]
+      declarations: [DCTManagementComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
