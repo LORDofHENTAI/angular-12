@@ -1,3 +1,4 @@
+<!-- buttons -->
 <div class="main-block">
     <div class="input-panel">
         <button mat-raised-button>
@@ -10,28 +11,28 @@
             <mat-icon>update</mat-icon>
         </button>
     </div>
-
+    <!-- table  -->
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
         <!-- Position Column -->
-        <ng-container matColumnDef="position">
+        <ng-container matColumnDef="store_name">
             <th mat-header-cell *matHeaderCellDef>Наименование объекта</th>
             <td mat-cell *matCellDef="let element">{{element.store_name}}</td>
         </ng-container>
 
         <!-- Name Column -->
-        <ng-container matColumnDef="name">
+        <ng-container matColumnDef="last_update">
             <th mat-header-cell *matHeaderCellDef>Дата последнего обновления</th>
             <td mat-cell *matCellDef="let element">{{element.last_update}}</td>
         </ng-container>
 
         <!-- Weight Column -->
-        <ng-container matColumnDef="weight">
+        <ng-container matColumnDef="store_id">
             <th mat-header-cell *matHeaderCellDef>Номер места</th>
             <td mat-cell *matCellDef="let element">{{element.store_id}}</td>
         </ng-container>
 
         <!-- Symbol Column -->
-        <ng-container matColumnDef="symbol">
+        <ng-container matColumnDef="price_id">
             <th mat-header-cell *matHeaderCellDef>Тип цены</th>
             <td mat-cell *matCellDef="let element">{{element.price_id}}</td>
         </ng-container>
@@ -54,8 +55,8 @@
             </td>
         </ng-container>
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-        <tr mat-row (click)="[clickedRows.add(row), RowSelected()]" *matRowDef="let row; columns: displayedColumns;"
-            [ngClass]="{'demo-row-is-clicked': row.id }">
+        <tr mat-row (click)="[clickedRows.add(row), highlight(row)]" *matRowDef="let row; columns: displayedColumns;"
+            [ngClass]="{'highlight': selectedRowIndex == row.id}">
         </tr>
     </table>
 

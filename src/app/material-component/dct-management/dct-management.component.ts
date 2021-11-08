@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-export interface PeriodicElement {
+export interface DCTElem {
   id: number;
   store_name: string;
   last_update: string;
@@ -9,7 +9,7 @@ export interface PeriodicElement {
   btn_update: boolean;
 }
 
-const ELEMENT_DATA: PeriodicElement[] = [
+const ELEMENT_DATA: DCTElem[] = [
   { id: 1, store_name: 'Hydrogen', last_update: "12.12.2020", store_id: 1, price_id: 1, btn_update: true },
   { id: 2, store_name: 'Helium', last_update: "12.12.2020", store_id: 2, price_id: 1, btn_update: true },
   { id: 3, store_name: 'Lithium', last_update: "12.12.2020", store_id: 3, price_id: 1, btn_update: true },
@@ -27,12 +27,12 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./dct-management.component.scss'],
 })
 export class DCTManagementComponent {
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol', 'btn_update'];
+  displayedColumns: string[] = ['store_name', 'last_update', 'store_id', 'price_id', 'btn_update'];
   dataSource = ELEMENT_DATA;
-  clickedRows = new Set<PeriodicElement>();
-  selected_row: boolean = false;
+  clickedRows = new Set<DCTElem>();
+  selectedRowIndex = -1;
 
-  RowSelected() {
-    this.selected_row = !this.selected_row;
+  highlight(row: { id: number; }) {
+    this.selectedRowIndex = row.id;
   }
 }
