@@ -30,4 +30,9 @@ export class DCTManagementComponent {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol', 'btn_update'];
   dataSource = ELEMENT_DATA;
   clickedRows = new Set<PeriodicElement>();
+  selected_row: boolean = false;
+
+  RowSelected() {
+    this.selected_row = !this.selected_row;
+  }
 }

@@ -14,9 +14,11 @@
 }
 
 .demo-row-is-clicked {
-    border-bottom: 1px solid transparent;
-    border-top: 1px solid transparent;
+    font-weight: bold;
 }
 .mat-raised-button {
     margin-left: 0.5cm;
+}
+.select-row {
+    background: rgba(137, 43, 226, 0.5);
 }
