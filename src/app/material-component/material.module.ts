@@ -17,6 +17,7 @@ import { DCTManagementComponent } from './dct-management/dct-management.componen
 import { LoyaltyCardComponent } from './loyalty-card/loyalty-card.component';
 import { PaymentManagementComponent } from './payment-management/payment-management.component';
 import { DiscordNotificationComponent } from './discord-notification/discord-notification.component';
+import { LogsComponent } from './logs/logs.component';
 
 @NgModule({
   imports: [
@@ -36,7 +37,8 @@ import { DiscordNotificationComponent } from './discord-notification/discord-not
     DCTManagementComponent,
     LoyaltyCardComponent,
     PaymentManagementComponent,
-    DiscordNotificationComponent
+    DiscordNotificationComponent,
+    LogsComponent
   ]
 })
 export class MaterialComponentsModule { }

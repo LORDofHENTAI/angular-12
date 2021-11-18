@@ -4,6 +4,8 @@ import { DCTManagementComponent } from './dct-management/dct-management.componen
 import { LoyaltyCardComponent } from './loyalty-card/loyalty-card.component';
 import { PaymentManagementComponent } from './payment-management/payment-management.component';
 import { DiscordNotificationComponent } from './discord-notification/discord-notification.component';
+import { LogsComponent } from './logs/logs.component';
+
 export const MaterialRoutes: Routes = [
   {
     path: 'IshopAPI',
@@ -25,4 +27,8 @@ export const MaterialRoutes: Routes = [
     path: 'DiscordNotification',
     component: DiscordNotificationComponent
   },
+  {
+    path: 'Logs',
+    component: LogsComponent
+  }
 ];
