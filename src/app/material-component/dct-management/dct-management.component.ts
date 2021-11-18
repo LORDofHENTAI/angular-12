@@ -21,6 +21,7 @@ const ELEMENT_DATA: DCTElem[] = [
   { id: 9, store_name: 'Fluorine', last_update: "12.12.2020", store_id: 9, price_id: 1, btn_update: true },
   { id: 10, store_name: 'Neon', last_update: "12.12.2020", store_id: 10, price_id: 1, btn_update: true },
 ];
+
 @Component({
   selector: 'app-dct-management',
   templateUrl: './dct-management.component.html',
@@ -35,4 +36,6 @@ export class DCTManagementComponent {
   highlight(row: { id: number; }) {
     this.selectedRowIndex = row.id;
   }
+
+
 }

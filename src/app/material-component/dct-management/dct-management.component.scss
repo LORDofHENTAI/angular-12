@@ -19,7 +19,12 @@
     background: rgba(137, 43, 226, 0.5);
 }
 .highlight .mat-cell {
-    background-color: rgba(30, 136, 229, 0.7);
+    background-color: rgb(162, 210, 255);
     font-weight: bold;
     color: white !important;
+}
+
+.mat-header-cell {
+    font-size: 15px;
+    font-weight: bold;
 }

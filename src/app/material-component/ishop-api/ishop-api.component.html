@@ -1,1 +1,65 @@
-<p>ishop-api works!</p>
+<div class="ishop-api-main">
+    <div class="remains">
+        <div class="time-button">
+            <div class="time">
+                Выгрузка остатков
+                <form class="example-form">
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Время</mat-label>
+                        <input matInput type="time">
+                    </mat-form-field>
+                </form>
+            </div>
+            <div class="button-up">
+                <button mat-raised-button>Принудительное обновление</button>
+            </div>
+        </div>
+
+        <div class="auto-update-status">
+            <mat-checkbox class="example-margin">Автообновление остатков</mat-checkbox>
+        </div>
+
+        <div class="card-time-status">
+            <mat-card class="card">
+                <mat-card-title>Последнее обновление остатков</mat-card-title>
+                <mat-card-subtitle>Время</mat-card-subtitle>
+            </mat-card>
+        </div>
+        <div *ngIf="rspinactive" class="update-status">
+            <mat-spinner class="spin" diameter="50"></mat-spinner>
+        </div>
+    </div>
+
+
+
+    <div class="other">
+        <div class="time-button">
+            <div class="time">
+                Выгрузка цен
+                <form class="example-form">
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Время</mat-label>
+                        <input matInput type="time">
+                    </mat-form-field>
+                </form>
+            </div>
+            <div class="button-up">
+                <button mat-raised-button>Принудительное цен</button>
+            </div>
+        </div>
+
+        <div class="auto-update-status">
+            <mat-checkbox class="example-margin">Автообновление цен</mat-checkbox>
+        </div>
+
+        <div class="card-time-status">
+            <mat-card class="card">
+                <mat-card-title>Последнее цен</mat-card-title>
+                <mat-card-subtitle>Время</mat-card-subtitle>
+            </mat-card>
+        </div>
+        <div *ngIf="pspinactive" class="update-status">
+            <mat-spinner class="spin" diameter="50"></mat-spinner>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+.remains {
+    display: flex;
+}
+.example-full-width {
+    width: 7cm;
+    font-size: 15px;
+    font-weight: bold;
+}
+.mat-label {
+    font-size: 15px;
+    font-weight: bold;
+}
+.mat-raised-button {
+    width: 7cm;
+    font-size: 15px;
+    font-weight: bold;
+}
+.auto-update-status {
+    margin-left: 1cm;
+    margin-right: 0.5cm;
+}
+.example-margin {
+    padding-top: 0.5cm;
+}
+.card {
+    width: 10cm;
+}
+.ishop-api-main {
+    display: flex;
+    flex-direction: column;
+}
+.update-status {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.other {
+    display: flex;
+    margin-top: 1cm;
+}

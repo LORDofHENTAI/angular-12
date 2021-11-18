@@ -1,0 +1,45 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.example-full-width {
+    width: 7cm;
+    font-size: 15px;
+    font-weight: bold;
+}
+.mat-label {
+    font-size: 15px;
+    font-weight: bold;
+}
+.mat-raised-button {
+    width: 7cm;
+    font-size: 15px;
+    font-weight: bold;
+}
+.auto-update-status {
+    margin-left: 1cm;
+    margin-right: 0.5cm;
+}
+.example-margin {
+    padding-top: 0.5cm;
+}
+.card {
+    width: 10cm;
+}
+.payment-management {
+    display: flex;
+}
+
+.update-status {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.spin {
+    margin-top: 0.5cm;
+}
