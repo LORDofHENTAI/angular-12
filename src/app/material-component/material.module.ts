@@ -18,6 +18,7 @@ import { LoyaltyCardComponent } from './loyalty-card/loyalty-card.component';
 import { PaymentManagementComponent } from './payment-management/payment-management.component';
 import { DiscordNotificationComponent } from './discord-notification/discord-notification.component';
 import { LogsComponent } from './logs/logs.component';
+import { DiscountComponent } from './discount/discount.component';
 
 @NgModule({
   imports: [
@@ -38,7 +39,8 @@ import { LogsComponent } from './logs/logs.component';
     LoyaltyCardComponent,
     PaymentManagementComponent,
     DiscordNotificationComponent,
-    LogsComponent
+    LogsComponent,
+    DiscountComponent
   ]
 })
 export class MaterialComponentsModule { }

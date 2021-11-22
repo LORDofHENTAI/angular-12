@@ -5,6 +5,8 @@
 }
 .remains {
     display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .example-full-width {
     width: 7cm;
@@ -23,9 +25,12 @@
 .auto-update-status {
     margin-left: 1cm;
     margin-right: 0.5cm;
+    min-width: 200px;
 }
 .example-margin {
     padding-top: 0.5cm;
+}
+.card-time-status {
 }
 .card {
     width: 10cm;
@@ -46,4 +51,56 @@
 .other {
     display: flex;
     margin-top: 1cm;
+    flex-direction: row;
+    align-items: center;
+}
+.FTP {
+    margin-top: 0.5cm;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 40px;
+    padding-left: 1cm;
+    padding-bottom: 1cm;
+    max-width: 40%;
+    p {
+        margin-left: 0.4cm;
+        margin-top: 0.3cm;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+.FTP-check {
+    padding-bottom: 0.5cm;
+    .example-margin {
+        margin-right: 0.5cm;
+        margin-top: -0.5cm;
+    }
+}
+.FTP-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .example-full-width {
+        margin-right: 0.5cm;
+    }
+    span {
+        font-size: 1cm;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0.3cm;
+        margin-top: -0.4cm;
+    }
+}
+.FTP-input-b {
+    width: 100%;
+    display: flex;
+    margin-top: 0.2cm;
+    .example-full-width {
+        margin-right: 1cm;
+    }
+}
+.FTP-btn {
+    display: flex;
+    .mat-raised-button {
+        margin-right: 1cm;
+    }
 }

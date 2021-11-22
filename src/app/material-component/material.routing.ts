@@ -5,6 +5,7 @@ import { LoyaltyCardComponent } from './loyalty-card/loyalty-card.component';
 import { PaymentManagementComponent } from './payment-management/payment-management.component';
 import { DiscordNotificationComponent } from './discord-notification/discord-notification.component';
 import { LogsComponent } from './logs/logs.component';
+import { DiscountComponent } from './discount/discount.component';
 
 export const MaterialRoutes: Routes = [
   {
@@ -26,6 +27,10 @@ export const MaterialRoutes: Routes = [
   {
     path: 'DiscordNotification',
     component: DiscordNotificationComponent
+  },
+  {
+    path: 'discount',
+    component: DiscountComponent
   },
   {
     path: 'Logs',

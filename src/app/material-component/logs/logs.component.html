@@ -20,6 +20,7 @@
                 <mat-option value="option">Loyalty Card</mat-option>
                 <mat-option value="option">Payment Management</mat-option>
                 <mat-option value="option">Discord Notification</mat-option>
+                <mat-option value="option">Discount</mat-option>
             </mat-select>
         </mat-form-field>
 
@@ -43,11 +44,20 @@
 
     <div class="main-window">
         <div class="message-item" *ngFor="let l of loglist">
-            <ul class="message-list">
-                <li>Модуль: {{l.ModuleName}} </li>
-                <li>Дата: {{l.Date}} </li>
-                <li>Описание:{{l.Message}} </li>
-            </ul>
+            <div class="message-item-list" [ngClass]="{
+                'debug': l.Status === 0,
+                'info' : l.Status === 1,
+                'warn' : l.Status === 2,
+                'error': l.Status === 3,
+                'fatal': l.Status === 4,
+                'off'  : l.Status === 5
+            }">
+                <ul class=" message-list">
+                    <li>Модуль: {{l.ModuleName}} </li>
+                    <li>Дата: {{l.Date}} </li>
+                    <li>Описание:{{l.Message}} </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

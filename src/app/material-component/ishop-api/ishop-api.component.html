@@ -14,11 +14,9 @@
                 <button mat-raised-button>Принудительное обновление</button>
             </div>
         </div>
-
         <div class="auto-update-status">
             <mat-checkbox class="example-margin">Автообновление остатков</mat-checkbox>
         </div>
-
         <div class="card-time-status">
             <mat-card class="card">
                 <mat-card-title>Последнее обновление остатков</mat-card-title>
@@ -60,6 +58,42 @@
         </div>
         <div *ngIf="pspinactive" class="update-status">
             <mat-spinner class="spin" diameter="50"></mat-spinner>
+        </div>
+    </div>
+    <div class="FTP">
+        <p>Подключение FTP</p>
+        <div class="FTP-input">
+            <div class="FTP-input-a">
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>IP</mat-label>
+                    <input matInput type="text">
+                </mat-form-field>
+                <span>:</span>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Порт</mat-label>
+                    <input matInput #postalCode maxlength="4">
+                    <mat-hint align="end">{{postalCode.value.length}} / 4</mat-hint>
+                </mat-form-field>
+            </div>
+            <div class="FTP-input-b">
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Логин</mat-label>
+                    <input matInput type="text">
+                </mat-form-field>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Пароль</mat-label>
+                    <input matInput type="text">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="FTP-check">
+            <mat-checkbox class="example-margin">Активное</mat-checkbox>
+            <mat-checkbox class="example-margin">Пассивное</mat-checkbox>
+        </div>
+        <div class="FTP-btn">
+            <button mat-raised-button>Сохранить</button>
+
+            <button mat-raised-button>Проверить соединение</button>
         </div>
     </div>
 </div>
